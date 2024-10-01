@@ -1,0 +1,109 @@
+/* Main section styles */
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    min-height: 50vh; /* Keeps the section at a good height without pushing it too far down */
+  }
+  
+  .contentLeft {
+    max-width: 45%; /* Adjust to bring content closer together */
+    text-align: left;
+  }
+  
+  .contentRight {
+    max-width: 45%; /* Adjust to bring content closer together */
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .subText {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .logo {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Newsletter Form */
+  .newsletterForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .emailInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff; /* Adjust text color */
+    outline: none;
+    flex-grow: 1;
+  }
+  
+  .emailInput::placeholder {
+    color: #fff;
+  }
+  
+  /* CTA Button */
+  .ctaButton {
+    background-color: #fff;
+    border: 1px solid #000; /* Adjust border color */
+    padding: 10px 20px;
+    color: #000; /* Adjust text color */
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  /* Hero Image */
+  .heroImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Make the image a circle */
+    object-fit: cover; /* Ensure the image maintains aspect ratio inside the circle */
+  }
+  
+  @media (max-width: 768px) {
+    .heroSection {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      align-items: center; /* Center-align both text and image */
+      height: auto;
+    }
+  
+    /* Ensure the image appears first in mobile view */
+    .contentRight {
+      order: -1; /* Move the image above the text */
+      margin-bottom: 20px; /* Add spacing between the image and text */
+    }
+  
+    .heroImage {
+      width: 150px; /* Shrink the image for smaller screens */
+      height: 150px;
+    }
+  }

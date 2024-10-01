@@ -1,0 +1,136 @@
+/* Main styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navMenu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navMenu li {
+  position: relative;
+}
+
+.navMenu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.navMenu li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navMenu li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger menu for mobile view */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.logo img {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Overlay styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000; /* Make the overlay solid black */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlayOpen {
+  display: flex;
+  opacity: 1;
+}
+
+/* Close button "X" at top-right */
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navMenuOverlay {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navMenuOverlay li {
+  margin: 20px 0;
+}
+
+.navMenuOverlay li a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navMenuOverlay li a:hover {
+  color: #f0f0f0;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .navMenu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
