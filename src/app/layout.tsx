@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import './globals.css';
+import '/lib/fontawesome.js';
 
 const neueHaasMono = localFont({
   src: "./fonts/NeueHaasDisplayMediu.woff",

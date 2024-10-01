@@ -1,0 +1,88 @@
+.aboutSection {
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .aboutHeader {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .nameTitle {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;  
+  }
+  
+  .imageWrapper {
+    
+  }
+  
+  .profileImage {
+    height: 150%;
+    width: 100%
+    /*border-radius: 50%; */
+  }
+  
+  .textWrapper {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .textWrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .textWrapper p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .socialLinks a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .socialLinks a:hover {
+    color: #888;
+  }
+
+  /* In your component CSS */
+.icon {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #f09433; /* Instagram gradient color */
+  }
