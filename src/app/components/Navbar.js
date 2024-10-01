@@ -41,16 +41,16 @@ const Navbar = () => {
 
       <ul className={isOpen ? styles.navMenuOpen : styles.navMenu}>
         <li>
-          <Link href="/newsletter">Newsletter</Link>
-        </li>
-        <li>
-          <Link href="/blog">Blog</Link>
+          <Link href="/newsletter">Letters</Link>
         </li>
         <li>
           <Link href="/about">About</Link>
         </li>
         <li>
           <Link href="/products">Products</Link>
+        </li>
+        <li>
+          <Link href="/products">Services</Link>
         </li>
       </ul>
 
@@ -63,7 +63,7 @@ const Navbar = () => {
 
         <ul className={styles.navMenuOverlay}>
           <li>
-            <Link href="/newsletter">Newsletter</Link>
+            <Link href="/newsletter"></Link>
           </li>
           <li>
             <Link href="/blog">Blog</Link>
