@@ -73,9 +73,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 30%;
   width: 100%;
-  background-color: #000; /* Make the overlay solid black */
+  background-color: #000; 
   display: none;
   justify-content: center;
   align-items: center;
@@ -115,7 +115,7 @@
 
 .navMenuOverlay li a {
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
