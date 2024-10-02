@@ -21,7 +21,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  padding: 1.25rem 10rem; 
 }
 
 p {

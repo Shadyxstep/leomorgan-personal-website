@@ -4,17 +4,16 @@
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  min-height: 50vh; /* Keeps the section at a good height without pushing it too far down */
-  /*padding: 1.25rem 10rem; /* Adds padding to the entire section */
+  min-height: 50vh;
 }
 
 .contentLeft {
-  max-width: 45%; /* Adjust to bring content closer together */
+  max-width: 45%; 
   text-align: left;
 }
 
 .contentRight {
-  max-width: 45%; /* Adjust to bring content closer together */
+  max-width: 45%; 
   text-align: center;
 }
 
@@ -22,13 +21,12 @@
   font-size: 1.5rem;
   font-weight: lighter;
   letter-spacing: 5px;
-  margin-bottom: 10px;
 }
 
 .subtitle {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 0.625rem;
 }
 
 .subText {
@@ -78,9 +76,9 @@
 }
 
 .ctaButton:hover {
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
 }
 
 /* Hero Image */
@@ -95,8 +93,8 @@
 @media (max-width: 768px) {
   .heroSection {
     flex-direction: column; 
-    align-items: center; 
-    padding: 40px 20px; 
+    align-items: center;
+    margin-bottom: 2rem;
   }
 
   .contentLeft,
@@ -132,7 +130,7 @@
     border: 1px solid #000; 
     padding: 5px 10px;
     color: #000; 
-    font-size: 1rem;
+    font-size: 0.925rem;
     cursor: pointer;
     margin-left: 10px;
     transition: background-color 0.3s ease;
