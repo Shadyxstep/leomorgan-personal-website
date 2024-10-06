@@ -1,4 +1,4 @@
-"use client"; // Add this at the top
+"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -48,7 +48,7 @@ const Navbar = () => {
           <Link href="/letters" onClick={closeMenu}>Letters</Link>
         </li>
         <li>
-          <Link href="/about" onClick={closeMenu}>About</Link>
+          <Link href="/#about" onClick={closeMenu}>About</Link>
         </li>
         <li>
           <Link href="/products" onClick={closeMenu}>Products</Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
             <Link href="/letters" onClick={closeMenu}>Letters</Link>
           </li>
           <li>
-            <Link href="/about" onClick={closeMenu}>About</Link>
+            <Link href="/#about" onClick={closeMenu}>About</Link>
           </li>
           <li>
             <Link href="/products" onClick={closeMenu}>Products</Link>

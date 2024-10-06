@@ -1,0 +1,162 @@
+.footerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #000;
+    color: #fff;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+  }
+  
+  /* Left Section */
+  .leftSection {
+    max-width: 50%;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #888;
+  }
+  
+  /* Right Section */
+  .rightSection {
+    max-width: 40%;
+    text-align: right;
+  }
+  
+  .taglineRight {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .descriptionRight {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .newsletterForm {
+    display: flex;
+    align-items: right;
+    flex-direction: column; /* Align vertically on mobile */
+  }
+  
+  .emailInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    flex-grow: 1;
+    margin-bottom: 15px; /* Adds margin on mobile */
+  }
+  
+  .emailInput::placeholder {
+    color: #888;
+  }
+  
+  .ctaButton {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width on mobile */
+  }
+  
+  .ctaButton:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Footer bottom section for copyright */
+  .footerBottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* Mobile screen adjustments */
+  @media (max-width: 768px) {
+    .footerSection {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .leftSection {
+      max-width: 100%;
+      margin-bottom: 30px; /* Adds space between sections on mobile */
+    }
+  
+    .rightSection {
+      max-width: 100%;
+      margin-bottom: 30px;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    .newsletterForm {
+      width: 100%; /* Full width on mobile */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ctaButton {
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .socialLinks {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;    
+    }
+  
+    .tagline,
+    .taglineRight {
+        align-items: center;
+        font-size: 1.25rem;
+    }
+  
+    .description,
+    .descriptionRight {
+      font-size: 1rem;
+    }
+  }
