@@ -23,6 +23,11 @@ body {
   background: var(--background);
 }
 
+body.scroll-lock {
+  position: fixed;
+  width: 100%;
+}
+
 p {
   color: var(--foreground);
   background: var(--background);

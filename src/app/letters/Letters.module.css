@@ -1,0 +1,91 @@
+.lettersPage {
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    background-color: #000; 
+    min-height: 100vh; 
+  }
+
+  .letterPage {
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    background-color: #000; 
+    min-height: 100vh; 
+  }
+  
+  .header {
+    margin-bottom: 50px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  /* Letters List */
+  .lettersList {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+  }
+  
+  /* Individual Letter Card */
+  .letterCard {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .letterCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  .letterCard h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .metaData {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .readMore {
+    background-color: #000;
+    border: 1px solid #fff; 
+    padding: 10px 20px;
+    color: #fff; 
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .readMore:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .lettersList {
+      grid-template-columns: 1fr; /* One column on mobile */
+    }
+  
+    .letterCard {
+      padding: 20px;
+    }
+  }

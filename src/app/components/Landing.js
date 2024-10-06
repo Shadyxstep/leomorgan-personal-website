@@ -9,9 +9,9 @@ export default function HeroSection() {
         <p className={styles.subText}>
           I’m passionate about helping others unlock their potential, whether
           it's athletic performance, creativity, or personal growth. I share
-          solutions and strategies I’ve used to overcome challenges in these
-          areas. If you’re looking to level up, join me and get practical
-          insights sent straight to your inbox →
+          solutions and strategies I’ve personally used to overcome challenges in these
+          areas. If you’re looking to move closer to your goals through practical
+          insights sent straight to your inbox, sign up here, or not, up to you really →
         </p>
         <form className={styles.newsletterForm}>
           <input

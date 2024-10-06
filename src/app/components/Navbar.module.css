@@ -6,6 +6,13 @@
   padding: 10px 20px;
   font-family: sans-serif;
   position: relative;
+  z-index: 2000; /* Ensure navbar stays on top */
+}
+
+/* Make sure the logo stays visible */
+.logo {
+  z-index: 3000; /* Higher than the overlay */
+  position: relative; /* So it stays on top of everything else */
 }
 
 .logo a {
@@ -63,26 +70,26 @@
 }
 
 .logo img {
-  width: 50px; 
+  width: 50px;
   height: 50px;
   border-radius: 50%;
 }
 
-/* Overlay styles */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   height: 30%;
   width: 100%;
-  background-color: #000; 
+  background-color: #000;
   display: none;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  z-index: 1000;
+  z-index: 1000; 
   opacity: 0;
   transition: opacity 0.5s ease;
+  padding-top: 70px; /* Adds space for the logo */
 }
 
 .overlayOpen {
@@ -104,9 +111,10 @@
 
 .navMenuOverlay {
   list-style: none;
-  text-align: center;
+  text-align: left; /* Align text to the left */
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  width: 100%; /* Take full width */
 }
 
 .navMenuOverlay li {
@@ -115,7 +123,7 @@
 
 .navMenuOverlay li a {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
