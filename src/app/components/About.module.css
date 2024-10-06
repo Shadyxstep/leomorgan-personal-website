@@ -1,11 +1,18 @@
 .aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* This makes sure it takes up the full height of the viewport */
   padding: 40px;
   color: #fff;
   text-align: center;
+  width: 100%;
 }
 
 .header {
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 .aboutHeader {
@@ -29,6 +36,8 @@
   justify-content: center;
   align-items: center;
   gap: 3.125rem;
+  text-align: center;
+  width: 100%
 }
 
 .textWrapper {
@@ -124,7 +133,7 @@
     font-size: 1.75rem;
     margin-bottom: 0.625rem
   }
-  
+
   .textWrapper p {
     font-size: 1rem;
     line-height: 1.6;
