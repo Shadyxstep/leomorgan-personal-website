@@ -32,6 +32,7 @@ const newsletters = [
 export default function LettersPage() {
   return (
     <>
+    <Navbar />
     <section className={styles.lettersPage}>
       <div className={styles.header}>
         <h1>Explore Your Curiosity</h1>

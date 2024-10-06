@@ -6,13 +6,12 @@
   padding: 10px 20px;
   font-family: sans-serif;
   position: relative;
-  z-index: 2000; /* Ensure navbar stays on top */
+  z-index: 2000;
 }
 
-/* Make sure the logo stays visible */
 .logo {
-  z-index: 3000; /* Higher than the overlay */
-  position: relative; /* So it stays on top of everything else */
+  z-index: 3000;
+  position: relative;
 }
 
 .logo a {
@@ -111,10 +110,10 @@
 
 .navMenuOverlay {
   list-style: none;
-  text-align: left; /* Align text to the left */
+  text-align: left;
   margin: 0;
   padding: 0 20px;
-  width: 100%; /* Take full width */
+  width: 100%;
 }
 
 .navMenuOverlay li {
