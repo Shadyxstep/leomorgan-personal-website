@@ -31,11 +31,11 @@ export default function AboutMe() {
         <h2 className="font-bold">Hey, I'm Leo.</h2>
         <p>
           I’m an international sprinter, software engineer, athletic performance coach, and content creator passionate about the mind, technology, and personal development.
-          I teach performance optimization techniques, strategies for athletic development, building effective habits, and creative workflows to help individuals unlock their true potential.
+          I teach about performance optimization, athletic development, building effective habits, and creative workflows to help people move towards goals that matter to them. All of which are poroblems I've navigated and solved in my own life.
         </p>
         <p>
           I currently work as a Software Engineer in the financial services industry. Previously, I worked as a rugby & sprints coach as well as a freelance videographer. Now, I share my experiences and learnings through 
-          writing and digital content, focusing on actionable insights that can help you achieve your personal, athletics and professional goals.
+          writing and digital content, focusing on actionable insights that can help you achieve your personal, athletic and professional goals.
         </p>
       </div>
     </div>

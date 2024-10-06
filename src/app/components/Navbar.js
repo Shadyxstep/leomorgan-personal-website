@@ -11,6 +11,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false); 
+  };
+
   // Prevent scrolling when the overlay is open
   useEffect(() => {
     if (isOpen) {
@@ -23,7 +27,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link href="/">
+        <Link href="/" onClick={closeMenu}>
           <img src="/home-icon.png" alt="home" />
         </Link>
       </div>
@@ -41,16 +45,13 @@ const Navbar = () => {
 
       <ul className={isOpen ? styles.navMenuOpen : styles.navMenu}>
         <li>
-          <Link href="/newsletter">Letters</Link>
+          <Link href="/letters" onClick={closeMenu}>Letters</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about" onClick={closeMenu}>About</Link>
         </li>
         <li>
-          <Link href="/products">Products</Link>
-        </li>
-        <li>
-          <Link href="/products">Services</Link>
+          <Link href="/products" onClick={closeMenu}>Products</Link>
         </li>
       </ul>
 
@@ -63,16 +64,13 @@ const Navbar = () => {
 
         <ul className={styles.navMenuOverlay}>
           <li>
-            <Link href="/newsletter"></Link>
+            <Link href="/letters" onClick={closeMenu}>Letters</Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/about" onClick={closeMenu}>About</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/products">Products</Link>
+            <Link href="/products" onClick={closeMenu}>Products</Link>
           </li>
         </ul>
       </div>
