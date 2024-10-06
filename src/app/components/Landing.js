@@ -1,4 +1,5 @@
 import styles from "./Landing.module.css";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -25,7 +26,15 @@ export default function HeroSection() {
         </form>
       </div>
       <div className={styles.contentRight}>
-        <img src="/heroimg.png" alt="Leo Morgan" className={styles.heroImage} />
+        <div className={styles.imageWrapper}>
+          <Image 
+          src={"/heroimg.png"} 
+          alt="Leo Morgan" 
+          height={300} 
+          width={300}
+          className={styles.profileImage} 
+          />
+        </div>
       </div>
     </section>
   );
