@@ -9,6 +9,10 @@
   z-index: 2000;
 }
 
+.hamburgerWrapper {
+  display: none;
+}
+
 .logo {
   z-index: 3000;
   position: relative;
@@ -54,7 +58,11 @@
   width: 100%;
 }
 
-/* Hamburger menu for mobile view */
+/* Hamburger wrapper */
+.hamburgerWrapper {
+  z-index: 3000;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -65,50 +73,42 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-top: 10px;
 }
 
+/* Overlay */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
-  height: 40%;
+  height: 50%;
   width: 100%;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background with slight transparency */
   display: none;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  z-index: 1000; 
+  z-index: 1000;
   opacity: 0;
   transition: opacity 0.5s ease;
-  transform: translateY(-100%);
   padding-top: 70px; /* Adds space for the logo */
 }
 
 .overlayOpen {
   display: flex;
   opacity: 1;
-  transform: translateY(0);
 }
 
-/* Close button "X" at top-right */
-.closeButton {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
+/* Navigation items inside the overlay */
 .navMenuOverlay {
   list-style: none;
-  text-align: left;
   margin: 0;
-  padding: 0 20px;
-  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .navMenuOverlay li {
@@ -117,7 +117,7 @@
 
 .navMenuOverlay li a {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -132,7 +132,14 @@
     display: none;
   }
 
-  .hamburger {
+  .logo {
+    margin-top: 0;
+  }
+
+  .hamburgerWrapper {
     display: flex;
+    top: 20px; /* Keep it positioned at the top */
+    right: 20px; 
+    position: absolute;
   }
 }

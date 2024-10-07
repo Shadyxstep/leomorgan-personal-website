@@ -1,3 +1,4 @@
+/* Main section styles */
 .lettersPage {
     padding: 20px;
     color: #fff;
@@ -7,6 +8,14 @@
     align-content: center;
     justify-content: center;
     width: 100%;
+    opacity: 0;
+    transform: translateY(20px); /* Slightly down initially */
+    transition: opacity 1s ease, transform 1s ease; /* Transition for fade-in */
+  }
+  
+  .lettersPage.fadeIn {
+    opacity: 1;
+    transform: translateY(0); /* Move into place */
   }
 
   .letterPage {

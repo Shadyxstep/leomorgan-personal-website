@@ -1,4 +1,6 @@
 "use client";
+
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import styles from './Letters.module.css';
 
@@ -30,12 +32,40 @@ const newsletters = [
 ];
 
 export default function LettersPage() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(sectionRef.current); 
+        }
+      },
+      { threshold: 0.2 } 
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <>
-    <section className={styles.lettersPage}>
+    <section
+      ref={sectionRef}
+      className={`${styles.lettersPage} ${isVisible ? styles.fadeIn : ""}`}
+    >
       <div className={styles.header}>
         <h1>Explore Your Curiosity</h1>
-        <p>Deep dives on human potential, creativity, and personal growth.</p>
+        <p>Deep diving into human potential, creativity, and personal growth.</p>
       </div>
       <div className={styles.lettersList}>
         {newsletters.map((newsletter) => (
@@ -51,6 +81,5 @@ export default function LettersPage() {
         ))}
       </div>
     </section>
-    </>
   );
 }
