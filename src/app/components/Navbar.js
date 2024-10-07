@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
+import { Spiral as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +37,7 @@ const Navbar = () => {
       <div className={styles.hamburger} onClick={toggleMenu}>
         {!isOpen && (
           <>
-            <span className={styles.line}></span>
-            <span className={styles.line}></span>
-            <span className={styles.line}></span>
+           <Hamburger />
           </>
         )}
       </div>

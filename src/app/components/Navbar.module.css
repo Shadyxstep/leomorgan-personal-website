@@ -61,13 +61,6 @@
   cursor: pointer;
 }
 
-.hamburger .line {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
-}
-
 .logo img {
   width: 50px;
   height: 50px;
@@ -88,12 +81,14 @@
   z-index: 1000; 
   opacity: 0;
   transition: opacity 0.5s ease;
+  transform: translateY(-100%);
   padding-top: 70px; /* Adds space for the logo */
 }
 
 .overlayOpen {
   display: flex;
   opacity: 1;
+  transform: translateY(0);
 }
 
 /* Close button "X" at top-right */

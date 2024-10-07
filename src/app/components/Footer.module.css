@@ -2,15 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px;
+    padding: 20px;
     background-color: #000;
     color: #fff;
     flex-wrap: wrap;
+    margin-bottom: -100px;
   }
   
   /* Left Section */
   .leftSection {
     max-width: 50%;
+  }
+
+  .leftSection,
+  .rightSection {
+    padding: 20px;
   }
   
   .logo {
@@ -45,12 +51,12 @@
   
   /* Right Section */
   .rightSection {
-    max-width: 40%;
-    text-align: right;
+    max-width: 50%;
+    text-align: center;
   }
   
   .taglineRight {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 20px;
     font-weight: bold;
   }
@@ -76,7 +82,8 @@
     color: #fff;
     outline: none;
     flex-grow: 1;
-    margin-bottom: 15px; /* Adds margin on mobile */
+    margin-bottom: 15px;
+    text-align: center;
   }
   
   .emailInput::placeholder {
@@ -104,7 +111,9 @@
     text-align: center;
     padding: 10px 0;
     font-size: 0.9rem;
-    color: #888;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px; 
   }
 
   .disclaimer {
@@ -120,12 +129,12 @@
       text-align: center;
       border-top: 2px solid #727272;
       gap: 40px;
-      margin-top: 40px;;
+      margin-top: 40px;
     }
   
     .leftSection {
       max-width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: -2rem
     }
   
     .rightSection {
