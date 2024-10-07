@@ -8,10 +8,6 @@ import { Spiral as Hamburger } from 'hamburger-react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   const closeMenu = () => {
     setIsOpen(false);
   };
