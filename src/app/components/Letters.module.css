@@ -9,13 +9,13 @@
     justify-content: center;
     width: 100%;
     opacity: 0;
-    transform: translateY(20px); /* Slightly down initially */
-    transition: opacity 1s ease, transform 1s ease; /* Transition for fade-in */
+    transform: translateY(20px); 
+    transition: opacity 1s ease, transform 1s ease; 
   }
   
   .lettersPage.fadeIn {
     opacity: 1;
-    transform: translateY(0); /* Move into place */
+    transform: translateY(0);
   }
 
   .letterPage {
@@ -104,5 +104,13 @@
 
     .readMore {
       font-size: 1rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header {
+        margin-top: -80px;
     }
   }
