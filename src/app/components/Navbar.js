@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
-import { Spiral as Hamburger } from 'hamburger-react'
+import { Spiral as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   const closeMenu = () => {
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   // Prevent scrolling when the overlay is open
@@ -34,12 +34,8 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Menu */}
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        {!isOpen && (
-          <>
-           <Hamburger />
-          </>
-        )}
+      <div className={styles.hamburgerWrapper}>
+        <Hamburger toggled={isOpen} toggle={setIsOpen}/>
       </div>
 
       <ul className={isOpen ? styles.navMenuOpen : styles.navMenu}>
@@ -56,20 +52,15 @@ const Navbar = () => {
 
       {/* Overlay panel */}
       <div className={`${styles.overlay} ${isOpen ? styles.overlayOpen : ''}`}>
-        {/* "X" button to close the menu */}
-        <button className={styles.closeButton} onClick={toggleMenu}>
-          &times;
-        </button>
-
         <ul className={styles.navMenuOverlay}>
           <li>
-            <Link href="/letters" onClick={closeMenu}>Letters</Link>
+            <Link href="/letters" onClick={closeMenu}>- Letters -</Link>
           </li>
           <li>
-            <Link href="/#about" onClick={closeMenu}>About</Link>
+            <Link href="/#about" onClick={closeMenu}>- About -</Link>
           </li>
           <li>
-            <Link href="/products" onClick={closeMenu}>Products</Link>
+            <Link href="/products" onClick={closeMenu}>- Products -</Link>
           </li>
         </ul>
       </div>

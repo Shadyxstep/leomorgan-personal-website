@@ -102,7 +102,7 @@ export default function AboutMe() {
           </p>
           <p>
             I currently work as a Software Engineer in the financial services industry. Previously, I worked as a rugby & sprints coach as well as a freelance videographer. I share my experiences and learnings through 
-            writing and creating digital content, focusing on actionable insights that can help you achieve your personal, athletic and professional goals.
+            writing and creating compelling visual content. 
           </p>
         </div>
       </div>

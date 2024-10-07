@@ -10,6 +10,27 @@ const newsletters = [
     content: "This is boilerplate text that I'm using to fill in the content of this newsletter. I'm not sure what I'm going to write about yet, but I'm sure it will be interesting.",
     author: "Leo Morgan",
   },
+  {
+    title: "Coming soon",
+    slug: "coming-soon-two",
+    date: "October 5, 2024",
+    content: "Did you not get the memo when you clicked into the first one? There's nothing here yet, check back later.",
+    author: "Leo Morgan",
+  },
+  {
+    title: "Coming soon",
+    slug: "coming-soon-three",
+    date: "October 5, 2024",
+    content: "*sigh* why are you still here? There's nothing to see yet.",
+    author: "Leo Morgan",
+  },
+  {
+    title: "Coming soon",
+    slug: "coming-soon-four",
+    date: "October 5, 2024",
+    content: "I'm starting to think you're doing this on purpose. There's nothing here. Go away.",
+    author: "Leo Morgan",
+  },
 ];
 
 function getNewsletterBySlug(slug: string) {
