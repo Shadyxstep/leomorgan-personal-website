@@ -12,17 +12,17 @@ export default function FooterSection() {
         </div>
         <h2 className={styles.tagline}>Train. Learn. Create.</h2>
         <p className={styles.description}>
-          Software engineer, international sprinter, videographer. Sharing insights on performance optimization, athletic development, building effective habits, and creative workflows.
+          Software engineer, international sprinter, videographer. Sharing insights on the art of learning, athletic development, building productive habits, and curating creative workflows.
         </p>
         <div className={styles.socialLinks}>
-        <a href="https://instagram.com" target="_blank" className={styles.icon}>
-          <FontAwesomeIcon icon={faInstagram} size="1x" />
+        <a href="https://www.instagram.com/leo_morgan/" target="_blank" className={styles.icon}>
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
-        <a href="https://x.com" target="_blank" className={styles.icon}>
-          <FontAwesomeIcon icon={faXTwitter} size="1x" />
+        <a href="https://x.com/_leomorgan" target="_blank" className={styles.icon}>
+          <FontAwesomeIcon icon={faXTwitter} size="2x" />
         </a>
-        <a href="https://linkedin.com" target="_blank" className={styles.icon}>
-          <FontAwesomeIcon icon={faLinkedin} size="1x" />
+        <a href="https://ie.linkedin.com/in/leo-morgan-b51b43138" target="_blank" className={styles.icon}>
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
       </div>
       </div>
@@ -43,6 +43,9 @@ export default function FooterSection() {
           </button>
         </form>
       </div>
+      <p className={styles.disclaimer}>
+        All rights reserved <br></br>© 2024 Leo Morgan
+        </p>    
     </footer>
   );
 }

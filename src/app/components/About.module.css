@@ -37,7 +37,7 @@
   align-items: center;
   gap: 3.125rem;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
 
 .textWrapper {
@@ -86,11 +86,44 @@
   color: #f09433; /* Instagram gradient color */
 }
 
+/* Animations */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Mobile screen adjustments */
 @media (max-width: 768px) {
   .aboutSection,
   .content {
-    padding: 10px;
+    padding: 5px;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -100,6 +133,7 @@
   .textWrapper {
     max-width: 100%;
     text-align: center;
+    opacity: 0;
   }
 
   .aboutHeader {
@@ -127,15 +161,36 @@
   .subtitle {
     font-size: 2rem;
     margin-bottom: 10px;
+    opacity: 0;
+    animation: slideInLeft 0.7s ease forwards;
   }
 
   .textWrapper h2 {
     font-size: 1.75rem;
-    margin-bottom: 0.625rem
+    margin-bottom: 0.625rem;
+    opacity: 0;
+    animation: slideInRight 0.7s ease forwards;
   }
 
   .textWrapper p {
     font-size: 1rem;
     line-height: 1.6;
+  }
+
+  .header {
+    opacity: 0;
+  }
+
+  /* Animate header sliding in from the left */
+  .animateHeader {
+    animation: fadeIn 0.7s ease forwards;
+  }
+
+  .animateImage {
+    animation: slideInLeft 0.7s ease forwards;
+  }
+
+  .animateText {
+    animation: slideInRight 0.7s ease forwards;
   }
 }
