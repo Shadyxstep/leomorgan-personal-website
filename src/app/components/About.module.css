@@ -3,15 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* This makes sure it takes up the full height of the viewport */
+  min-height: 80vh; /* This makes sure it takes up the full height of the viewport */
   padding: 40px;
   color: #fff;
   text-align: center;
   width: 100%;
+  margin: 0 auto;
+  border: 1px solid #727272;
+  border-radius: 1rem;
 }
 
 .header {
-  margin-bottom: 30px;
   justify-content: center;
 }
 
@@ -123,10 +125,12 @@
 @media (max-width: 768px) {
   .aboutSection,
   .content {
-    padding: 5px;
+    padding: 10px;
+    margin-top: 2rem;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    border: none;
   }
 
   .imageWrapper,
@@ -137,7 +141,7 @@
   }
 
   .aboutHeader {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: lighter;
     letter-spacing: 15px;
   }
@@ -187,10 +191,10 @@
   }
 
   .animateImage {
-    animation: slideInLeft 0.7s ease forwards;
+    animation: fadeIn 0.7s ease forwards;
   }
 
   .animateText {
-    animation: slideInRight 0.7s ease forwards;
+    animation: fadeIn 0.7s ease forwards;
   }
 }

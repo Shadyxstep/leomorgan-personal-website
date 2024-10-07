@@ -49,8 +49,7 @@ export default function HeroSection() {
         <p className={styles.subText}>
           I&apos;m passionate about athletic performance, creativity, and personal growth. I share
           solutions and strategies I&apos;ve personally used to overcome challenges in these
-          areas. If any of these topics interest you, I write about practical
-          insights & step by step guides to how you can solve similar problems in your life. Best of all, they&apos;re sent straight to your inbox, free of charge. 
+          areas. If any of these topics interest you, I write about practical insights to problems I&apos;ve solved in these domains. Best of all, they&apos;re sent straight to your inbox, free of charge. 
           <br></br> Sign up here ↓
         </p>
         <div className={styles.formWrapper}>
