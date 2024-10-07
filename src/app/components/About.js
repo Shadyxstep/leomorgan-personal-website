@@ -79,14 +79,14 @@ export default function AboutMe() {
         >
           <Image src="/leosprint.png" alt="Leo Morgan" layout="responsive" width={200} height={200} />
           <div className={styles.socialLinks}>
-            <a href="https://instagram.com" target="_blank" className={styles.icon}>
-              <FontAwesomeIcon icon={faInstagram} size="1x" />
+            <a href="https://www.instagram.com/leo_morgan/" target="_blank" className={styles.icon}>
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
-            <a href="https://x.com" target="_blank" className={styles.icon}>
-              <FontAwesomeIcon icon={faXTwitter} size="1x" />
+            <a href="https://x.com/_leomorgan" target="_blank" className={styles.icon}>
+              <FontAwesomeIcon icon={faXTwitter} size="2x" />
             </a>
-            <a href="https://linkedin.com" target="_blank" className={styles.icon}>
-              <FontAwesomeIcon icon={faLinkedin} size="1x" />
+            <a href="https://ie.linkedin.com/in/leo-morgan-b51b43138" target="_blank" className={styles.icon}>
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
           </div>
         </div>

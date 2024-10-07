@@ -64,7 +64,7 @@ export default function LettersPage() {
       className={`${styles.lettersPage} ${isVisible ? styles.fadeIn : ""}`}
     >
       <div className={styles.header}>
-        <h1 className={styles.title}>Explore Your Curiosity</h1>
+        <h1>Explore Your Curiosity</h1>
         <p>Deep diving into human potential, creativity, and personal growth.</p>
       </div>
       <div className={styles.lettersList}>
