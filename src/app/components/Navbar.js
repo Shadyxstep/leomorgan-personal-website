@@ -50,13 +50,13 @@ const Navbar = () => {
       <div className={`${styles.overlay} ${isOpen ? styles.overlayOpen : ''}`}>
         <ul className={styles.navMenuOverlay}>
           <li>
-            <Link href="/letters" onClick={closeMenu}>- Letters -</Link>
+            <Link href="/letters" onClick={closeMenu}>Letters</Link>
           </li>
           <li>
-            <Link href="/#about" onClick={closeMenu}>- About -</Link>
+            <Link href="/#about" onClick={closeMenu}>About</Link>
           </li>
           <li>
-            <Link href="/products" onClick={closeMenu}>- Products -</Link>
+            <Link href="/products" onClick={closeMenu}>Products</Link>
           </li>
         </ul>
       </div>
