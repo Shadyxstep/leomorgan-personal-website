@@ -18,13 +18,13 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 body.scroll-lock {
