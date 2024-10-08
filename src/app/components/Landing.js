@@ -73,7 +73,7 @@ export default function HeroSection() {
       >
         <div className={styles.imageWrapper}>
           <Image 
-            src={"/heroimgmin.png"} 
+            src={"/heroimg.png"} 
             alt="Leo Morgan" 
             height={300} 
             width={300}
