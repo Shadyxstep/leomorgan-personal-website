@@ -5,7 +5,35 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export default function HeroSection() {
+  /* Email Signup Functions */
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const mailchimpUrl =
+      "https://app.us11.list-manage.com/subscribe/post?u=73ac78b880c1bc85a83399f20&id=6557e0f816";
+
+    const formData = new FormData();
+    formData.append("EMAIL", email);
+
+    try {
+      const res = await fetch(mailchimpUrl, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData,
+      });
+      setMessage("Success! You're all signed up :)");
+      setEmail("");
+      console.log(res);
+    } catch (error) {
+      setMessage("An error occurred. Please try again.");
+      console.log(error);
+    }
+  };
+
+  /* CSS Animation Functions */
   const leftSectionRef = useRef(null);
   const rightSectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -53,16 +81,20 @@ export default function HeroSection() {
           <br></br> Sign up here ↓
         </p>
         <div className={styles.formWrapper}>
-          <form className={styles.newsletterForm}>
+        <form className={styles.newsletterForm} onSubmit={handleSubmit}>
             <input
               type="email"
               placeholder="Your email"
               className={styles.emailInput}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <button type="submit" className={styles.ctaButton}>
               Read For Free
             </button>
           </form>
+          {message && <p>{message}</p>}
         </div>
       </div>
       <div

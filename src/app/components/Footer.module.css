@@ -187,4 +187,10 @@
   .footerBottom {
     margin-top: -50px;
   }
+
+  .ctaButton:focus, .ctaButton:active {
+    background-color: #000; /* Revert back to original color after click */
+    color: #fff;
+    outline: none; /* Removes the outline when focused */
+  }
 }
