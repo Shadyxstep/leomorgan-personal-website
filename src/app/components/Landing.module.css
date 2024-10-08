@@ -128,13 +128,13 @@
     align-items: center;
     margin-bottom: 2rem;
     margin-top: -2rem;
+    padding: 3rem 1rem;
   }
 
   .contentLeft,
   .contentRight {
     max-width: 100%;
     text-align: center;
-    padding: 0.625rem 1.25rem;
     opacity: 0;
     transform: translateY(20px); /* Initial position off-screen */
     transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;

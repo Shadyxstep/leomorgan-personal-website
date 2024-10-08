@@ -64,7 +64,7 @@ export default function AboutMe() {
   return (
     <section id="about" className={styles.aboutSection}>
       <div
-        className={`${styles.header} ${isHeaderVisible ? styles.animateHeader : ''}`} 
+        className={`${styles.header} ${isHeaderVisible ? styles.animateFade : ''}`} 
         ref={headerRef}
       >
         <h1 className={styles.aboutHeader}>ABOUT ME</h1>
@@ -74,7 +74,7 @@ export default function AboutMe() {
 
       <div className={styles.content}>
         <div
-          className={`${styles.imageWrapper} ${isImageVisible ? styles.animateImage : ''}`}
+          className={`${styles.imageWrapper} ${isImageVisible ? styles.animateFade : ''}`}
           ref={imageRef}
         >
           <Image src="/leosprint.png" alt="Leo Morgan" layout="responsive" width={200} height={200} />
@@ -92,12 +92,12 @@ export default function AboutMe() {
         </div>
 
         <div
-          className={`${styles.textWrapper} ${isTextVisible ? styles.animateText : ''}`}
+          className={`${styles.textWrapper} ${isTextVisible ? styles.animateFade : ''}`}
           ref={textRef}
         >
           <h2 className="font-bold">Hey, I&apos;m Leo.</h2>
           <p>
-            I&apos;m an international sprinter, software engineer, athletic performance coach, and content creator passionate about the mind, technology, and personal development.
+            I&apos;m an athlete, software engineer and content creator passionate about the mind, technology, and personal development.
             I write about performance optimization, athletic development, building effective habits, and curating efficient creative workflows.
           </p>
           <p>

@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Navbar from '../../components/Navbar'; 
 import styles from '../Letters.module.css';
+import FooterSection from '@/app/components/Footer';
 
 const newsletters = [
   {
@@ -28,7 +29,7 @@ const newsletters = [
     title: "Coming soon",
     slug: "coming-soon-four",
     date: "October 5, 2024",
-    content: "I'm starting to think you're doing this on purpose >:( You know what they say - the definition of insanity is doing the same thing over and over again and expecting different results.",
+    content: "I'm starting to think you're doing this on purpose.. You know what they say - the definition of insanity is doing the same thing over and over again and expecting different results.;",
     author: "Leo Morgan",
   },
 ];
@@ -56,6 +57,7 @@ export default function LetterPage({ params }: { params: { slug: string } }) {
           <p>{newsletter.content}</p>
         </div>
       </article>
+      <FooterSection />
     </>
   );
 }

@@ -6,7 +6,7 @@ export default function ProductSection() {
 
  return (
     <section className={styles.productSection}>
-     <h1 className={styles.title}>Coming soon...</h1>
+     <h1 className={styles.title}>Coming soon...</h1> 
     </section>
   );
 }

@@ -47,7 +47,7 @@ export default function HeroSection() {
         <h1 className={styles.title}>Leo Morgan</h1>
         <h2 className={styles.subtitle}>Train. Learn. Create.</h2>
         <p className={styles.subText}>
-          I&apos;m passionate about athletic performance, creativity, and personal growth. I share
+          I&apos;m passionate about performance, technology, creativity, and personal growth. I share
           solutions and strategies I&apos;ve personally used to overcome challenges in these
           areas. If any of these topics interest you, I write about practical insights to problems I&apos;ve solved in these domains. Best of all, they&apos;re sent straight to your inbox, free of charge. 
           <br></br> Sign up here ↓
