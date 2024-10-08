@@ -9,7 +9,7 @@ export default function ProductSection() {
     <>
     <Navbar />
     <section className={styles.productSection}>
-     <h1 className={styles.title}>Coming soon...</h1>
+     <h1 className={styles.title}>Coming soon...  &#x1F440;</h1>
     </section>
     <FooterSection />
     </>

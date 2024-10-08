@@ -188,15 +188,7 @@
   }
 
   /* Animate header sliding in from the left */
-  .animateHeader {
-    animation: fadeIn 0.7s ease forwards;
-  }
-
-  .animateImage {
-    animation: fadeIn 0.7s ease forwards;
-  }
-
-  .animateText {
+  .animateFade {
     animation: fadeIn 0.7s ease forwards;
   }
 }

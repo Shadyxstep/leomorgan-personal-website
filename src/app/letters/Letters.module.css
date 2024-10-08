@@ -86,6 +86,11 @@
     .lettersList {
       grid-template-columns: 1fr; /* One column on mobile */
     }
+    
+    .letterPage h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
   
     .letterCard {
       padding: 20px;

@@ -16,9 +16,8 @@ export default function FooterSection() {
         </div>
         <h2 className={styles.tagline}>Train. Learn. Create.</h2>
         <p className={styles.description}>
-          Software engineer, international sprinter, videographer. Sharing
-          insights on the art of learning, athletic development, building
-          productive habits, and curating creative workflows.
+          Software engineer, athlete, creator. Sharing
+          insights on performance, athletic development, productivity, mindset and creativity.
         </p>
         <div className={styles.socialLinks}>
           <a
@@ -47,11 +46,12 @@ export default function FooterSection() {
 
       <div className={styles.rightSection}>
         <h2 className={styles.taglineRight}>
-          Motivation, Productivity, Creativity
+          Productivity, Mindset, Creativity
         </h2>
         <p className={styles.descriptionRight}>
-          Practical insights sent straight to your inbox ↓
+          Practical insights sent straight to your inbox
         </p>
+        <p>↓</p>
         <form className={styles.newsletterForm}>
           <input
             type="email"

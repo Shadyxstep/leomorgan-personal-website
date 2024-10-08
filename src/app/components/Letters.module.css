@@ -94,6 +94,7 @@
   
   /* Responsive */
   @media (max-width: 768px) {
+    
     .lettersList {
       grid-template-columns: 1fr; /* One column on mobile */
     }
@@ -111,6 +112,6 @@
     }
 
     .header {
-        margin-top: -80px;
+        margin-top: 2rem;
     }
   }

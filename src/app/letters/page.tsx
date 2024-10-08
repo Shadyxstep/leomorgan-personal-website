@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from './Letters.module.css';
 import Navbar from "../components/Navbar";
+import FooterSection from "../components/Footer";
 
 const newsletters = [
   {
@@ -52,6 +53,7 @@ export default function LettersPage() {
         ))}
       </div>
     </section>
+    <FooterSection />
     </>
   );
 }

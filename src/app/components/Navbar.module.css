@@ -83,7 +83,7 @@
   left: 0;
   height: 50%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Dark background with slight transparency */
+  background-color: #000;
   display: none;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,7 @@
   .navMenu {
     display: none;
   }
-
+  
   .logo {
     margin-top: 0;
   }
