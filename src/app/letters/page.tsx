@@ -5,9 +5,9 @@ import FooterSection from "../components/Footer";
 
 const newsletters = [
   {
-    title: "Coming Soon",
-    slug: "coming-soon",
-    date: "October 5, 2024",
+    title: "I read Charlie Francis' book the Speed Trap, so you don't have to.",
+    slug: "speed-trap",
+    date: "October 20, 2024",
     author: "Leo Morgan",
   },
   {
@@ -37,7 +37,7 @@ export default function LettersPage() {
     <section className={styles.lettersPage}>
       <div className={styles.header}>
         <h1>Explore Your Curiosity</h1>
-        <p>Deep dives on human potential, creativity, and personal growth.</p>
+        <p>Deep dives on performance, the art of speed, creativity, and personal growth.</p>
       </div>
       <div className={styles.lettersList}>
         {newsletters.map((newsletter) => (

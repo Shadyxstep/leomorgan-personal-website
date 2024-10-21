@@ -6,9 +6,9 @@ import styles from './Letters.module.css';
 
 const newsletters = [
   {
-    title: "Coming Soon",
-    slug: "coming-soon",
-    date: "No Date",
+    title: "I read Charlie Francis' book the Speed Trap, so you don't have to.",
+    slug: "speed-trap",
+    date: "20th October 2024",
     author: "Leo Morgan",
   },
   {
