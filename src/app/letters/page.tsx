@@ -7,7 +7,7 @@ const newsletters = [
   {
     title: "I read Charlie Francis' book the Speed Trap, so you don't have to.",
     slug: "speed-trap",
-    date: "October 21, 2024",
+    date: "October 20, 2024",
     author: "Leo Morgan",
   },
   {

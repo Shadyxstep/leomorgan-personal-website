@@ -6,7 +6,7 @@ import FooterSection from '@/app/components/Footer';
 const newsletters = [
   {
     title: "I read Charlie Francis' book the Speed Trap, so you don't have to.",
-    slug: "coming-soon",
+    slug: "speed-trap",
     date: "October 20, 2024",
     content: [
       "Here are 5 key lessons from one of the best sprint coaches ever that can help you better understand the art of training speed (without the doping).",
