@@ -4,31 +4,6 @@ import { useEffect, useRef } from "react";
 
 export default function Circle() {
 
-const glowRef = useRef<HTMLDivElement>(null);
-  const radius = 150;
-
-  useEffect(() => {
-    let angle = 0;
-    const speed = 0.01; // Base speed
-    const animate = () => {
-      // Simulate gravity effect: slower at top, faster at bottom
-      // Speed modulated by sin of angle (simulate potential energy)
-      const gravityAccel = 1 + Math.sin(angle);
-
-      angle += speed * gravityAccel;
-
-      const x = radius * Math.cos(angle);
-      const y = radius * Math.sin(angle);
-
-      if (glowRef.current) {
-        glowRef.current.style.transform = `translate(${x}px, ${y}px)`;
-      }
-
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-  }, []);
   return (
     <div className={styles.neonContainer}>
       <div className={styles.neonCircle}>

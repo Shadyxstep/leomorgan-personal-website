@@ -7,9 +7,7 @@ import Circle from "./components/Circle";
 export default function Home() {
   return (
     <div>
-      <div className="fixed top-0 left-0 right-0 z-50">
       <Navbar/>
-      </div>
       <div className="items-center justify-items-center min-h-screen p-3 pb-20 gap-16 sm:p-20 ">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <div className="relative w-full">
