@@ -1,264 +1,319 @@
 /* styles/global.css or NeonCircle.module.css */
 
 .neonContainer {
-    width: 300px;
-    height: 300px;
-    margin: 112px auto;
-    opacity: 0.5;
-  }
-  
-  .neonCircle {
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    position: relative; 
-    overflow: visible;
-  }
-  
-  .neonGlow {
+  width: 300px;
+  height: 300px;
+  margin: 112px auto;
+  opacity: 0;
+}
+
+.neonCircle {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: relative;
+  overflow: visible;
+}
+
+.neonGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #fff;
+
+  transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
+  animation: orbit 3s linear infinite;
+}
+
+.neonGlowTwo {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 5px;
-    height: 5px;
+    width: 9px;
+    height: 9px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 5px #00f0ff;
-
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #fff;
+  
     transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
-    animation: orbit 3s linear infinite;
+    animation: orbitTwo 3s linear infinite;
   }
 
-  .glow2 {
-    opacity: 0.9;
-    animation-delay: 0.01s;
-    z-index: 2;
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  .glow3 {
-    opacity: 0.85;
-    animation-delay: 0.03s;
-    z-index: 2;
-    filter: blur(0.5px);
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%; 
-  }
-  
-  .glow4 {
-    opacity: 0.80;
-    filter: blur(0.5px);
-    animation-delay: 0.05s;
-    z-index: 2;
-    width: 4px;
-    height: 4px;
-     position: absolute;
-    top: 50%;
-    left: 50%; 
-  }
+.glow2 {
+  opacity: 0.9;
+  animation-delay: 0.01s;
+  z-index: 2;
+  width: 8.5px;
+  filter: blur(0.5px);
+  height: 8.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow5 {
-    opacity: 0.;
-    animation-delay: 0.075s;
-    z-index: 2;
-    filter: blur(0.5px);
-    width: 3px;
-    height: 3px;
-     position: absolute;
-    top: 50%;
-    left: 50%; 
-  }
+.glow3 {
+  opacity: 0.85;
+  animation-delay: 0.03s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow6 {
-    opacity: 0.7;
-    animation-delay: 0.09s;
-    z-index: 2;
-    width: 3px;
-    height: 3px;
-     position: absolute;
-    top: 50%;
-    left: 50%; 
-  }
+.glow4 {
+  opacity: 0.8;
+  filter: blur(0.5px);
+  animation-delay: 0.05s;
+  z-index: 2;
+  width: 7.5px;
+  height: 7.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow7 {
-    opacity: 0.65;
-    animation-delay: 0.11s;
-    z-index: 2;
-    filter: blur(0.5px);
-    width: 3px;
-    height: 3px;
-     position: absolute;
-    top: 50%;
-    left: 50%; 
-  }
+.glow5 {
+  opacity: 0.75;
+  animation-delay: 0.075s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow8 {
-    opacity: 0.6;
-    animation-delay: 0.13s;
-    z-index: 2;
-    width: 3px;
-    height: 3px;
-     position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow6 {
+  opacity: 0.7;
+  animation-delay: 0.09s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 6.5px;
+  height: 6.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow9 {
-    opacity: 0.55;
-    animation-delay: 0.15s;
-    z-index: 2;
-    width: 3px;
-    height: 3px;
-     position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  .glow10 {
-    opacity: 0.5;
-    animation-delay: 0.17s;
-    z-index: 2;
-    width: 3px;
-    height: 3px;    
-     position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow7 {
+  opacity: 0.65;
+  animation-delay: 0.11s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow11 {
-    opacity: 0.45;
-    animation-delay: 0.19s;
-    z-index: 2;         
-    width: 3px;
-    height: 3px;
-     position: absolute;
-    top: 50%;
-    left: 50%;
-  }     
+.glow8 {
+  opacity: 0.6;
+  animation-delay: 0.13s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 5.5px;
+  height: 5.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow12 {
-    opacity: 0.4;
-    animation-delay: 0.21s;
-    z-index: 2;
-    width: 3px;
-    height: 3px;
-     position: absolute;
-    top: 50%;
-    left: 50%;
-    }
+.glow9 {
+  opacity: 0.55;
+  animation-delay: 0.15s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow13 {
-    opacity: 0.35;
-    animation-delay: 0.23s;
-    z-index: 2;
-    width: 2px;
-    height: 2px;
-     position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow10 {
+  opacity: 0.5;
+  animation-delay: 0.17s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 4.5px;
+  height: 4.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow14 {
-    opacity: 0.3;
-    animation-delay: 0.25s;
-    z-index: 2;
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow11 {
+  opacity: 0.45;
+  animation-delay: 0.19s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow15 {
-    opacity: 0.25;
-    animation-delay: 0.27s;
-    z-index: 2;
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow12 {
+  opacity: 0.4;
+  animation-delay: 0.21s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 3.75px;
+  height: 3.75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow16 {
-    opacity: 0.2;
-    animation-delay: 0.29s;
-    z-index: 2;
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow13 {
+  opacity: 0.35;
+  animation-delay: 0.23s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 3.5px;
+  height: 3.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow17 {
-    opacity: 0.15;
-    animation-delay: 0.31s;
-    z-index: 2;
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow14 {
+  opacity: 0.3;
+  animation-delay: 0.25s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 3.25px;
+  height: 3.25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow18 {
-    opacity: 0.1;
-    animation-delay: 0.33s;
-    z-index: 2;
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow15 {
+  opacity: 0.25;
+  animation-delay: 0.27s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow19 {
-    opacity: 0.05;
-    animation-delay: 0.35s;
-    z-index: 2;
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow16 {
+  opacity: 0.2;
+  animation-delay: 0.29s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 2.75px;
+  height: 2.75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  .glow20 { 
-    opacity: 0.05;
-    animation-delay: 0.37s;
-    z-index: 2;
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+.glow17 {
+  opacity: 0.15;
+  animation-delay: 0.31s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 2.5px;
+  height: 2.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
-  
-  @keyframes orbit {
-    /* Start at right (0°) */
+.glow18 {
+  opacity: 0.1;
+  animation-delay: 0.33s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.glow19 {
+  opacity: 0.05;
+  animation-delay: 0.35s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 1.5px;
+  height: 1.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.glow20 {
+  opacity: 0.05;
+  animation-delay: 0.37s;
+  z-index: 2;
+  filter: blur(0.5px);
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* @keyframes orbit {
+
     0%   { transform: translate(-50%, -50%) rotate(0deg)   translateX(150px) rotate(0deg); }
   
-    /* Accelerate: 0° → 180° */
+
     5%   { transform: translate(-50%, -50%) rotate(20deg)  translateX(150px) rotate(-20deg); }
     12%  { transform: translate(-50%, -50%) rotate(60deg)  translateX(150px) rotate(-60deg); }
     22%  { transform: translate(-50%, -50%) rotate(120deg) translateX(150px) rotate(-120deg); }
     35%  { transform: translate(-50%, -50%) rotate(180deg) translateX(150px) rotate(-180deg); }
-  
-    /* Decelerate: 180° → 270° */
+
     50%  { transform: translate(-50%, -50%) rotate(225deg) translateX(150px) rotate(-225deg); }
     65%  { transform: translate(-50%, -50%) rotate(270deg) translateX(150px) rotate(-270deg); }
   
-    /* Reaccelerate: 270° → 360° */
+
     80%  { transform: translate(-50%, -50%) rotate(310deg) translateX(150px) rotate(-310deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg); }
+  } */
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
   }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(150px)
+      rotate(-360deg);
+  }
+}
+
+@keyframes orbitTwo {
+    0% {
+      transform: translate(-50%, -50%) rotate(-180deg) translateX(150px) rotate(180deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(180deg) translateX(150px) rotate(-180deg);
+    }
+  }
+
+@media (max-width: 768px) {
+  .neonContainer {
+    width: 300px;
+    height: 300px;
+    margin: 112px auto;
+    opacity: 1;
+  }
+}

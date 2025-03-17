@@ -171,6 +171,12 @@
   .taglineRight {
     align-items: center;
     font-size: 1.25rem;
+
+    background: linear-gradient(to bottom, white, grey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For newer browsers */
+    color: transparent;    /* Fallback */
   }
 
   .description,
@@ -188,9 +194,14 @@
     margin-top: -50px;
   }
 
+  .ctaButton {
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
   .ctaButton:focus, .ctaButton:active {
     background-color: #000; /* Revert back to original color after click */
     color: #fff;
-    outline: none; /* Removes the outline when focused */
+    outline: none; 
   }
 }

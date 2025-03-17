@@ -7,6 +7,7 @@ export default function Circle() {
     <div className={styles.neonContainer}>
       <div className={styles.neonCircle}>
         <div className={styles.neonGlow} />
+        <div className={styles.neonGlowTwo} />
         <div className={`${styles.neonGlow} ${styles.glow2}`} />
         <div className={`${styles.neonGlow} ${styles.glow3}`} />
         <div className={`${styles.neonGlow} ${styles.glow4}`} />
@@ -26,6 +27,26 @@ export default function Circle() {
         <div className={`${styles.neonGlow} ${styles.glow18}`} />
         <div className={`${styles.neonGlow} ${styles.glow19}`} />
         <div className={`${styles.neonGlow} ${styles.glow20}`} />
+
+        <div className={`${styles.neonGlowTwo} ${styles.glow2}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow3}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow4}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow5}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow6}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow7}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow8}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow9}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow10}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow11}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow12}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow13}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow14}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow15}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow16}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow17}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow18}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow19}`} />
+        <div className={`${styles.neonGlowTwo} ${styles.glow20}`} />
       </div>
     </div>
   );

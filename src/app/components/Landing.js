@@ -8,6 +8,7 @@ export default function HeroSection() {
   /* Email Signup Functions */
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,11 +44,15 @@ export default function HeroSection() {
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          setIsVisible(true); 
+          setIsVisible(true);
+          // Start typing animation when section becomes visible
+          setTimeout(() => {
+            setIsTypingComplete(true);
+          }, 1250); // Match this with the typing animation duration
         }
       },
       {
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -64,7 +69,7 @@ export default function HeroSection() {
     };
   }, []);
 
- return (
+  return (
     <section className={styles.heroSection}>
       <div
         className={`${styles.contentLeft} ${
@@ -72,16 +77,22 @@ export default function HeroSection() {
         }`}
         ref={leftSectionRef}
       >
-        <h1 className={styles.title}>Leo Morgan</h1>
-        <h2 className={styles.subtitle}>Train. Learn. Create.</h2>
-        <p className={styles.subText}>
-          I&apos;m passionate about performance, technology, creativity, and personal growth. I share
-          solutions and strategies I&apos;ve personally used to overcome challenges in these
-          areas. If any of these topics interest you, I write about practical insights to problems I&apos;ve solved in these domains. Best of all, they&apos;re sent straight to your inbox, free of charge. 
-          <br></br> Sign up here ↓
+        <h1 className={`${styles.title} ${isTypingComplete ? styles.typingComplete : ''}`}>
+          Leo Morgan
+        </h1>
+        <h2 className={`${styles.subtitle} ${isTypingComplete ? styles.fadeIn : ''}`}>
+          Train. Learn. Create.
+        </h2>
+        <p className={`${styles.subText} ${isTypingComplete ? styles.fadeIn : ''}`}>
+          I code, sprint and make videos.
+          <br></br>
+          I write about performance optimization, athletic development, building effective habits, and curating efficient creative workflows.
+          <div className={styles.signupText}>
+            Sign up here ↓
+          </div>  
         </p>
-        <div className={styles.formWrapper}>
-        <form className={styles.newsletterForm} onSubmit={handleSubmit}>
+        <div className={`${styles.formWrapper} ${isTypingComplete ? styles.fadeIn : ''}`}>
+          <form className={styles.newsletterForm} onSubmit={handleSubmit}>
             <input
               type="email"
               placeholder="Your email"
@@ -100,7 +111,7 @@ export default function HeroSection() {
       <div
         className={`${styles.contentRight} ${
           isVisible ? styles.fadeIn : ""
-        }`} // Apply fade-in class dynamically
+        }`}
         ref={rightSectionRef}
       >
         <div className={styles.imageWrapper}>
