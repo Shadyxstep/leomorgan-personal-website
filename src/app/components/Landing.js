@@ -45,10 +45,9 @@ export default function HeroSection() {
         const entry = entries[0];
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Start typing animation when section becomes visible
           setTimeout(() => {
             setIsTypingComplete(true);
-          }, 1250); // Match this with the typing animation duration
+          }, 1250); 
         }
       },
       {
@@ -116,7 +115,7 @@ export default function HeroSection() {
       >
         <div className={styles.imageWrapper}>
           <Image 
-            src={"/heroimg.png"} 
+            src={"/A7403927.jpg"} 
             alt="Leo Morgan" 
             height={300} 
             width={300}
