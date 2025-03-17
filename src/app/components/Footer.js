@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faLinkedin,
-  faXTwitter,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
@@ -46,11 +46,16 @@ export default function FooterSection() {
           </div>
           <h2 className={styles.tagline}>Train. Learn. Create.</h2>
           <p className={styles.description}>
-            Software engineer, athlete, creator. Sharing insights on
-            performance, athletic development, productivity, mindset and
-            creativity.
+            Catch me below on my socials ↓
           </p>
           <div className={styles.socialLinks}>
+            <a
+              href="https://ie.linkedin.com/in/leo-morgan-b51b43138"
+              target="_blank"
+              className={styles.icon}
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
             <a
               href="https://www.instagram.com/leo_morgan/"
               target="_blank"
@@ -59,18 +64,11 @@ export default function FooterSection() {
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a
-              href="https://x.com/_leomorgan"
+              href="https://www.youtube.com/@leomorgan_12"
               target="_blank"
               className={styles.icon}
             >
-              <FontAwesomeIcon icon={faXTwitter} size="2x" />
-            </a>
-            <a
-              href="https://ie.linkedin.com/in/leo-morgan-b51b43138"
-              target="_blank"
-              className={styles.icon}
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <FontAwesomeIcon icon={faYoutube} size="2x" />
             </a>
           </div>
         </div>

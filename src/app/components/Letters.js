@@ -6,7 +6,7 @@ import styles from './Letters.module.css';
 
 const newsletters = [
   {
-    title: "I read Charlie Francis' book the Speed Trap, so you don't have to.",
+    title: "Charlie Francis' book the Speed Trap",
     slug: "speed-trap",
     date: "20th October 2024",
     author: "Leo Morgan",
@@ -64,7 +64,7 @@ export default function LettersPage() {
       className={`${styles.lettersPage} ${isVisible ? styles.fadeIn : ""}`}
     >
       <div className={styles.header}>
-        <h1>Explore Your Curiosity</h1>
+        <h1 className={styles.headerTitle}>Explore Your Curiosity</h1>
         <p>Deep diving into human potential, creativity, and personal growth.</p>
       </div>
       <div className={styles.lettersList}>

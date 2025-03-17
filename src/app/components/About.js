@@ -98,11 +98,12 @@ export default function AboutMe() {
           <h2 className="font-bold">Hey, I&apos;m Leo.</h2>
           <p>
             I&apos;m an athlete, software engineer and content creator passionate about the mind, technology, and personal development.
-            I write about performance optimization, athletic development, building effective habits, and curating efficient creative workflows.
           </p>
           <p>
-            I currently work as a Software Engineer in the financial services industry. Previously, I worked as a rugby & sprints coach as well as a freelance videographer. I share my experiences and learnings through 
-            writing and creating compelling visual content. 
+            I currently work as a Software Engineer in the financial services industry, and experienced as a freelance videographer on the side. 
+          </p>
+          <p>
+            I share my experiences and learnings through writing and creating compelling visual content. 
           </p>
         </div>
       </div>
