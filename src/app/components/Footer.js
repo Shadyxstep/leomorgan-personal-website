@@ -64,7 +64,7 @@ export default function FooterSection() {
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a
-              href="https://ie.linkedin.com/in/leo-morgan-b51b43138"
+              href="https://www.youtube.com/@leomorgan_12"
               target="_blank"
               className={styles.icon}
             >
