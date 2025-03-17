@@ -47,7 +47,7 @@ export default function HeroSection() {
           setIsVisible(true);
           setTimeout(() => {
             setIsTypingComplete(true);
-          }, 1250); 
+          }, 500); 
         }
       },
       {
