@@ -1,6 +1,5 @@
 "use client"
 import styles from './Circle.module.css';
-import { useEffect, useRef } from "react";
 
 export default function Circle() {
 
