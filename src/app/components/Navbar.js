@@ -7,6 +7,20 @@ import { Spiral as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 20;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [scrolled]);
 
   const closeMenu = () => {
     setIsOpen(false);
@@ -21,43 +35,53 @@ const Navbar = () => {
     }
   }, [isOpen]);
 
+  const navLinks = [
+    { href: '/letters', label: 'Letters' },
+    { href: '/#about', label: 'About' },
+    { href: '/products', label: 'Products' }
+  ];
+
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.logo}>
         <Link href="/" onClick={closeMenu}>
           <img src="/home-icon.png" alt="home" />
         </Link>
       </div>
 
-      {/* Hamburger Menu */}
-      <div className={styles.hamburgerWrapper}>
-        <Hamburger toggled={isOpen} toggle={setIsOpen}/>
-      </div>
-
-      <ul className={isOpen ? styles.navMenuOpen : styles.navMenu}>
-        <li>
-          <Link href="/letters" onClick={closeMenu}>Letters</Link>
-        </li>
-        <li>
-          <Link href="/#about" onClick={closeMenu}>About</Link>
-        </li>
-        <li>
-          <Link href="/products" onClick={closeMenu}>Products</Link>
-        </li>
+      {/* Desktop Menu */}
+      <ul className={styles.navMenu}>
+        {navLinks.map((link) => (
+          <li key={link.href}>
+            <Link href={link.href} onClick={closeMenu}>
+              {link.label}
+            </Link>
+          </li>
+        ))}
       </ul>
 
-      {/* Overlay panel */}
+      {/* Mobile Menu Button */}
+      <div className={styles.hamburgerWrapper}>
+        <Hamburger 
+          toggled={isOpen} 
+          toggle={setIsOpen}
+          size={24}
+          color="#fff"
+          rounded
+          label="Show menu"
+        />
+      </div>
+
+      {/* Mobile Menu Overlay */}
       <div className={`${styles.overlay} ${isOpen ? styles.overlayOpen : ''}`}>
         <ul className={styles.navMenuOverlay}>
-          <li>
-            <Link href="/letters" onClick={closeMenu}>Letters</Link>
-          </li>
-          <li>
-            <Link href="/#about" onClick={closeMenu}>About</Link>
-          </li>
-          <li>
-            <Link href="/products" onClick={closeMenu}>Products</Link>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} onClick={closeMenu}>
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

@@ -11,6 +11,7 @@
 }
 
 /* Main section styles */
+
 .heroSection {
   display: flex;
   justify-content: space-between;
@@ -18,6 +19,7 @@
   color: #fff;
   min-height: 50vh;
   padding: 70px;
+  width: 100%;
 }
 
 .contentLeft {
@@ -40,6 +42,12 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 0.625rem;
+  
+  background: linear-gradient(to bottom, white, grey);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For newer browsers */
+  color: transparent;    /* Fallback */
 }
 
 .subText {
@@ -127,7 +135,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
-    margin-top: -2rem;
+    margin-top: 4rem;
     padding: 3rem 1rem;
   }
 
@@ -179,6 +187,7 @@
   .ctaButton {
     background-color: #fff;
     border: 0.0625rem solid #000;
+    border-radius: 20px;
     padding: 0.3125rem 0.625rem;
     color: #000;
     font-size: 1rem;

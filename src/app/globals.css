@@ -38,6 +38,12 @@ p {
   background: var(--background);
 }
 
+@media (max-width: 48rem) {
+  .body {
+    margin-top: 10rem;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
