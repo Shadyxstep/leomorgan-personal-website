@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
+
 export default function AboutMe() {
   const imageRef = useRef(null); 
   const textRef = useRef(null);  

@@ -47,7 +47,7 @@ export default function HeroSection() {
           setIsVisible(true);
           setTimeout(() => {
             setIsTypingComplete(true);
-          }, 500); 
+          }, 1300); 
         }
       },
       {
@@ -79,18 +79,19 @@ export default function HeroSection() {
         <h1 className={`${styles.title} ${isTypingComplete ? styles.typingComplete : ''}`}>
           Leo Morgan
         </h1>
-        <h2 className={`${styles.subtitle} ${isTypingComplete ? styles.fadeIn : ''}`}>
+        <h2 className={`${styles.subtitle} ${styles.fadeIn}`}>
           Train. Learn. Create.
         </h2>
-        <p className={`${styles.subText} ${isTypingComplete ? styles.fadeIn : ''}`}>
+        <p className={`${styles.subText} ${ styles.fadeIn}`}>
           I code, sprint and make videos.
           <br></br>
           I write about performance optimization, athletic development, building effective habits, and curating efficient creative workflows.
-          <div className={styles.signupText}>
-            Sign up here ↓
-          </div>  
+         
         </p>
-        <div className={`${styles.formWrapper} ${isTypingComplete ? styles.fadeIn : ''}`}>
+        <p className={styles.signupText}>
+            Sign up here ↓
+          </p>  
+        <div className={`${styles.formWrapper} ${styles.fadeIn}`}>
           <form className={styles.newsletterForm} onSubmit={handleSubmit}>
             <input
               type="email"

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import styles from './Letters.module.css';
+import { motion } from 'framer-motion';
 
 const newsletters = [
   {
@@ -67,9 +68,13 @@ export default function LettersPage() {
         <h1 className={styles.headerTitle}>Explore Your Curiosity</h1>
         <p>Deep diving into human potential, creativity, and personal growth.</p>
       </div>
-      <div className={styles.lettersList}>
+      <div 
+        className={styles.lettersList}>
         {newsletters.map((newsletter) => (
-          <div key={newsletter.slug} className={styles.letterCard}>
+          <motion.div 
+          animate={{ y: -20 }} transition={{ type: "spring" }}
+          key={newsletter.slug} 
+          className={styles.letterCard}>
             <h2>{newsletter.title}</h2>
             <p className={styles.metaData}>
               {newsletter.author} • {newsletter.date}
@@ -77,7 +82,7 @@ export default function LettersPage() {
             <Link href={`/letters/${newsletter.slug}`} className={styles.readMore}>
               Read Full Post
             </Link>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

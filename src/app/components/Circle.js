@@ -4,7 +4,7 @@ import styles from './Circle.module.css';
 export default function Circle() {
 
   return (
-    <div className={styles.neonContainer}>
+    <div className={`${styles.neonContainer} ${styles.fadeIn}`}>
       <div className={styles.neonCircle}>
         <div className={styles.neonGlow} />
         <div className={styles.neonGlowTwo} />
