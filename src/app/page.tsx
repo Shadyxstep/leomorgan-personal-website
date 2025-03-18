@@ -4,13 +4,15 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Letters from "./components/Letters";
 import Circle from "./components/Circle";
+import Loading from "./components/Loading";
 export default function Home() {
   return (
     <div>
       <Navbar/>
       <div className="items-center justify-items-center min-h-screen p-3 pb-20 gap-16 sm:p-20 ">
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <main className="flex flex-col row-start-2 items-center sm:items-start">
           <div className="relative w-full">
+            <Loading />
             <Landing />
             <div className="absolute inset-0 pointer-events-none z-10">
               <Circle />
