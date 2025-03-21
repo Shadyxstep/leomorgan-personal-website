@@ -185,6 +185,14 @@
 
   .navMenuOverlay li {
     margin-top: -20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    background: linear-gradient(to bottom, white, rgb(159, 159, 159));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For newer browsers */
+    color: transparent;    /* Fallback */
   }
 
   .hamburgerWrapper {

@@ -13,6 +13,8 @@
   transform: translateZ(0); /* Force GPU acceleration */
   will-change: transform; /* Optimize animations */
   transition: transform 0.8s ease-out;
+  margin: 0 auto;
+  overflow: none;
 }
 
 .loadingContainer.hide {
@@ -69,11 +71,17 @@
   0% {
     transform: scale(0.3) translateZ(0);
     opacity: 1;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(192, 192, 192);
   }
   100% {
     transform: scale(1.8) translateZ(0);
     opacity: 0;
     background-color: rgba(255, 255, 255, 0.1);
   }
+}
+
+@media (max-width: 768px) {
+    .loadingContainer {
+        width: 100vw;
+      }
 }

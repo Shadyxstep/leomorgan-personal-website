@@ -36,9 +36,9 @@ const Navbar = () => {
   }, [isOpen]);
 
   const navLinks = [
-    { href: '/letters', label: 'Letters' },
-    { href: '/#about', label: 'About' },
-    { href: '/products', label: 'Products' }
+    { href: '/letters', label: 'Letters', navLabel: 'LETTERS' },
+    { href: '/#about', label: 'About', navLabel: 'ABOUT' },
+    { href: '/products', label: 'Products', navLabel: 'PRODUCTS' }
   ];
 
   return (
@@ -78,7 +78,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link href={link.href} onClick={closeMenu}>
-                {link.label}
+                {link.navLabel}
               </Link>
             </li>
           ))}

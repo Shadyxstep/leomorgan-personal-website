@@ -10,11 +10,10 @@ export default function Loading() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsHiding(true);
-      // Wait for the animation to complete before unmounting
       setTimeout(() => {
         setIsVisible(false);
-      }, 800); // Match the transition duration
-    }, 2000);
+      }, 800);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);

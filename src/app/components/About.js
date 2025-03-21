@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './About.module.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default function AboutMe() {
   const imageRef = useRef(null); 
@@ -79,13 +79,25 @@ export default function AboutMe() {
         >
           <Image src="/leosprint.png" alt="Leo Morgan" layout="responsive" width={200} height={200} />
           <div className={styles.socialLinks}>
-            <a href="https://www.instagram.com/leo_morgan/" target="_blank" className={styles.icon}>
+            <a 
+              href="https://www.instagram.com/leo_morgan/" 
+              target="_blank" 
+              className={styles.icon}
+            >
               <FontAwesomeIcon icon={faInstagram} size="1x" />
             </a>
-            <a href="https://x.com/_leomorgan" target="_blank" className={styles.icon}>
-              <FontAwesomeIcon icon={faXTwitter} size="1x" />
+            <a
+              href="https://www.youtube.com/@leomorgan_12"
+              target="_blank"
+              className={styles.icon}
+            >
+              <FontAwesomeIcon icon={faYoutube} size="1x" />
             </a>
-            <a href="https://ie.linkedin.com/in/leo-morgan-b51b43138" target="_blank" className={styles.icon}>
+            <a 
+              href="https://ie.linkedin.com/in/leo-morgan-b51b43138" 
+              target="_blank" 
+              className={styles.icon}
+            >
               <FontAwesomeIcon icon={faLinkedin} size="1x" />
             </a>
           </div>
